@@ -7,10 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eureka-server-1" />
         <module name="java-application" />
+        <module name="eureka-server-1" />
+        <module name="nacos-consumer-2" />
         <module name="eureka-provider-1" />
         <module name="eureka-consumer-1" />
+        <module name="spring-web" />
+        <module name="nacos-provider-1" />
+        <module name="nacos-consumer-1" />
       </profile>
     </annotationProcessing>
   </component>
@@ -19,6 +23,10 @@
       <module name="eureka-consumer-1" options="-parameters" />
       <module name="eureka-provider-1" options="-parameters" />
       <module name="eureka-server-1" options="-parameters" />
+      <module name="nacos-consumer-1" options="-parameters" />
+      <module name="nacos-consumer-2" options="-parameters" />
+      <module name="nacos-provider-1" options="-parameters" />
+      <module name="spring-web" options="-parameters" />
     </option>
   </component>
 </project>

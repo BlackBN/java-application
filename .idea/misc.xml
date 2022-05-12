@@ -8,6 +8,10 @@
         <option value="$PROJECT_DIR$/eureka-server-1/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-provider-1/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-consumer-1/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-provider-1/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-consumer-1/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-consumer-2/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-web/pom.xml" />
       </list>
     </option>
   </component>

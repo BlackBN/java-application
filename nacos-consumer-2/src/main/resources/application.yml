@@ -1,0 +1,14 @@
+#spring.data.mongodb.uri=mongodb://admin:admin@localhost:27017/admin
+server:
+  port: 8612
+spring:
+  application:
+    name: nacos-consumer-2
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        register-enabled: true
+    loadbalancer:
+      ribbon:
+        enabled: false

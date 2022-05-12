@@ -1,0 +1,10 @@
+#spring.data.mongodb.uri=mongodb://admin:admin@localhost:27017/admin
+server:
+  port: 8610
+spring:
+  application:
+    name: nacos-provider-1
+nacos:
+  discovery:
+    server-addr: 127.0.0.1:8848
+    enabled: true
