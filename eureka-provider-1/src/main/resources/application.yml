@@ -1,0 +1,14 @@
+#spring.data.mongodb.uri=mongodb://admin:admin@localhost:27017/admin
+server:
+  port: 8710
+spring:
+  application:
+    name: eureka-provider-1
+eureka:
+  #  instance:
+  #    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    hostname: localhost

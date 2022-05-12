@@ -1,0 +1,14 @@
+#spring.data.mongodb.uri=mongodb://admin:admin@localhost:27017/admin
+server:
+  port: 8711
+spring:
+  application:
+    name: eureka-consumer-1
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    # fetch-registry: true
+    # register-with-eureka: false
