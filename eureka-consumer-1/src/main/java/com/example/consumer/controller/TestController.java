@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.List;
 
 @RestController
@@ -63,6 +65,20 @@ public class TestController {
         String url = "http://eureka-provider-1/getTest1";
         System.out.println(url);
         String response = restTemplate.getForObject(url, String.class);
+        return applicationName + ":" + serverPort + " " + response + " " + System.currentTimeMillis();
+    }
+
+    @GetMapping("/test4")
+    public String test4() {
+        String url = "http://eureka-provider-1111/getTest1";
+        System.out.println(url);
+        URI uri = null;
+        try {
+            uri = new URI(url);
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+        String response = restTemplate.getForObject(uri, String.class);
         return applicationName + ":" + serverPort + " " + response + " " + System.currentTimeMillis();
     }
 
